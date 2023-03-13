@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+  </head>
+  <body>
+    <h1>Edit Dish</h1>
+    <form action="/vietfood/<%= dish._id %>?_method=PUT" method="POST">
+      <!--  NOTE: the form is pre-populated with values for the server-->
+      Name: <input type="text" name="name" value="<%= dish.name %>" /><br />
+      Taste: <input type="text" name="taste" value="<%= dish.taste %>" /><br />
+      Is Vegetarian: <input type="checkbox" name="isVeg" <% if(dish.isVeg === true){ %> checked <% } %> /><br />
+      <input type="submit" value="EDIT" />
+    </form>
+  </body>
+</html>

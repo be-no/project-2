@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    background-color: coral;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}  
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+/* flexbox, styling, more tweaks, google fonts, easy css */

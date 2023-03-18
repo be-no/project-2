@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head.ejs') %>
     <title>New</title>
 </head>
 <body>
-    <h1>Add New Dish</h1>
-        <form action="/vietfood" method="POST">
-            Name: <input type="text" name="name" /><br/>
-            Taste: <input type="text" name="taste" /><br/>
-            Is Vegetarian: <input type="checkbox" name="isVeg" /><br/>
-            <input type="submit" name="" value="Add New Dish"/>
-        </form>
+    <h1>Add Dish</h1>
+    <form class="container" action="/vietfood" method="POST">
+        Name: <input type="text" name="name" /><br/>
+        <h6></h6>
+        Taste: <input type="text" name="taste" /><br/>
+        <h6></h6>
+        Is Vegetarian: <input type="checkbox" name="isVeg" /><br/>
+        <h6></h6>
+    <input type="submit" name="" value="ADD"/>
+    </form>
+    <h1></h1>
+    <nav>
+        <a href="/vietfood">Back to Vietnamese Favorites</a>
+    </nav>
     </body>
 </html>

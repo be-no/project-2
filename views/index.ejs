@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head.ejs') %>
     <title>Index</title>
 </head>
 <body>
-    <h1>See All Viet Food</h1>
-    <ul>
+    <h1>Vietnamese Favorites</h1>
+    <nav>
+        <a href="/vietfood/new">ADD A DISH</a>
+    </nav>
+    <ul class="container">
         <% vietfood.forEach(dish=> { %>
             <li>
-                <a href="/vietfood/<%= dish._id; %>">
+                <a href="/vietfood/<%= dish._id %>">
                     <%= dish.name; %>
                 </a>
                 <form action="/vietfood/<%= dish._id %>?_method=DELETE" method="POST">
                     <input type="submit" value="REMOVE"/>
                 </form>
-                <a href="/vietfood/<%=dish._id %>/edit">EDIT A DISH</a>
+                <a href="/vietfood/<%=dish._id %>/edit">EDIT DISH</a>
+                <h6></h6>
             </li>
         <% }) %>
     </ul>
-    <nav>
-        <a href="/vietfood/new">ADD</a>
-    </nav>
 </body>
 </html>

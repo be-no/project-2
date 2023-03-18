@@ -1,6 +1,9 @@
 {
   "name": "project-2",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.11.0"
+  },
   "description": "A working full-stack CRUD application using Node.js, Mongoose, Express and EJS. Uses all 7 RESTful routes. Adheres to the MVC file structure: Models, Views, Controllers.",
   "main": "server.js",
   "scripts": {

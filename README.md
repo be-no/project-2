@@ -1,3 +1,6 @@
+# heroku deployment link
+https://git.heroku.com/vietfood-favs.git
+
 # project-2
 - Basic working full-stack CRUD application using Node.js, Mongoose, Express and EJS
 - Adheres to the MVC file structure: Models, Views, Controllers
